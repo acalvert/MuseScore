@@ -4191,6 +4191,11 @@ void Score::setStyle(const MStyle& s)
       style() = s;
       }
 
+QString Score::absolutePath()
+      {
+      return masterScore()->fileInfo()->absolutePath();
+      }
+
 //---------------------------------------------------------
 //   MasterScore
 //---------------------------------------------------------

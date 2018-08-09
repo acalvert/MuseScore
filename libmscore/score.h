@@ -1152,6 +1152,9 @@ class Score : public QObject, public ScoreElement {
       void cmdAddPitch(int note, bool addFlag, bool insert);
       void forAllLyrics(std::function<void(Lyrics*)> f);
 
+      //@ returns the Score's file's absolute path. This doesn't include the file name. 
+      Q_INVOKABLE QString absolutePath();
+
       friend class ChangeSynthesizerState;
       friend class Chord;
       };
